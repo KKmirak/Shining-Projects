@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="hhttps://fonts.google.com/specimen/Hanken+Grotesk"
+      rel="stylesheet"
+    />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="leftside">
+        <div id="t1">Your Result</div>
+        <div class="circle">
+          <p>
+            <span id="t2">76</span><br />
+            <span id="t3">of 100</span>
+          </p>
+        </div>
+
+        <div id="t4">Great</div>
+        <div id="t5">
+          You scored higher than 65% of the people who have taken these tests.
+        </div>
+      </div>
+
+      <div class="rightside" >
+        <div id="t6">Summary</div>
+
+        <div id="box1" class="box">
+          <img src="assets/images/icon-reaction.svg" alt="reaction" />
+          <div id="reaction">Reaction</div>
+          <div class="voto">
+            80 <span style="color: hsl(224, 30%, 27%, 0.5)">/ 100 </span>
+          </div>
+        </div>
+        <div id="box2" class="box">
+          <img src="assets/images/icon-memory.svg" alt="memory" />
+
+          <div id="memory">Memory</div>
+
+          <div class="voto">
+            92
+            <span style="color: hsl(224, 30%, 27%, 0.5)">/ 100</span>
+          </div>
+        </div>
+
+        <div id="box3" class="box">
+          <img src="assets/images/icon-verbal.svg" alt="verbal" />
+          <div id="verbal">Verbal</div>
+          <div class="voto">
+            61
+            <span style="color: hsl(224, 30%, 27%, 0.5)">/ 100</span>
+          </div>
+        </div>
+        <div id="box4" class="box">
+          <img src="assets/images/icon-visual.svg" alt="visual" />
+          <div id="visual">Visual</div>
+          <div class="voto">
+            72
+            <span style="color: hsl(224, 30%, 27%, 0.5)">/ 100</span>
+          </div>
+        </div class="continue">
+
+        <a id="continue" href="#">Continue</a>
+      </div>
+    </div>
+
+    <div style="display: none" class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
