@@ -3,97 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-
-    <title>Frontend Mentor | Results summary component</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="hhttps://fonts.google.com/specimen/Hanken+Grotesk"
-      rel="stylesheet"
-    />
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="leftside">
-        <div id="t1">Your Result</div>
-        <div class="circle">
-          <p>
-            <span id="t2">76</span><br />
-            <span id="t3">of 100</span>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <body>
+      <div class="container">
+        <header class="header">
+          <h1 id="title">Survey Form</h1>
+          <p id="description">
+            Thank you for taking the time to help us improve our projects
           </p>
+        </header>
+
+        <form id="survey-form">
+            <div class="top">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your Email"
+            required
+          />
+          <label for="numner" id="number-label">Age <span id="a">(optional)</span></label>
+          <input
+            type="number"
+            id="number"
+            placeholder="Enter your Age"
+            min="14"
+            max="120"
+          />
         </div>
 
-        <div id="t4">Great</div>
-        <div id="t5">
-          You scored higher than 65% of the people who have taken these tests.
+          <p>What is you favourite color?</p>
+          <select id="dropdown" name="dropdown">
+            <option disabled selected value>Select a color</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="other">Others</option>
+          </select>
+
+          <p>What is your favourite pet?</p>
+          <div id="radio">
+          <label
+            ><input type="radio" name="radio" value="Cat" checked /> Cat</label
+          >
+          <label><input type="radio" name="radio" value="Dog" /> Dog</label>
+          <label
+            ><input type="radio" name="radio" value="Monkey" /> Monkey</label
+          >
+          <label
+            ><input type="radio" name="radio" value="Others" /> Others</label
+          >
         </div>
+        <div id="check">
+          <p>What languages do you speak?</p>
+          <label
+            ><input name="language" type="checkbox" value="english" />
+            English</label
+          >
+          <label
+            ><input name="language" type="checkbox" value="chinese" />
+            Chinese</label
+          >
+          <label
+            ><input name="language" type="checkbox" value="arabic" />
+            Arabic</label
+          >
+
+          <label
+            ><input name="language" type="checkbox" value="italian" />
+            Italian</label
+          >
+          <label
+            ><input name="language" type="checkbox" value="spanish" />
+            Spanish</label
+          >
+          <label
+            ><input name="language" type="checkbox" value="other" />
+            Others</label
+          >
+        </div>
+
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comment"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+
+          <button id="submit" type="submit">Submit</button>
+        </form>
       </div>
-
-      <div class="rightside" >
-        <div id="t6">Summary</div>
-
-        <div id="box1" class="box">
-          <img src="assets/images/icon-reaction.svg" alt="reaction" />
-          <div id="reaction">Reaction</div>
-          <div class="voto">
-            80 <span style="color: hsl(224, 30%, 27%, 0.5)">/ 100 </span>
-          </div>
-        </div>
-        <div id="box2" class="box">
-          <img src="assets/images/icon-memory.svg" alt="memory" />
-
-          <div id="memory">Memory</div>
-
-          <div class="voto">
-            92
-            <span style="color: hsl(224, 30%, 27%, 0.5)">/ 100</span>
-          </div>
-        </div>
-
-        <div id="box3" class="box">
-          <img src="assets/images/icon-verbal.svg" alt="verbal" />
-          <div id="verbal">Verbal</div>
-          <div class="voto">
-            61
-            <span style="color: hsl(224, 30%, 27%, 0.5)">/ 100</span>
-          </div>
-        </div>
-        <div id="box4" class="box">
-          <img src="assets/images/icon-visual.svg" alt="visual" />
-          <div id="visual">Visual</div>
-          <div class="voto">
-            72
-            <span style="color: hsl(224, 30%, 27%, 0.5)">/ 100</span>
-          </div>
-        </div class="continue">
-
-        <a id="continue" href="#">Continue</a>
-      </div>
-    </div>
-
-    <div style="display: none" class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
-  </body>
+    </body>
+  </head>
 </html>
